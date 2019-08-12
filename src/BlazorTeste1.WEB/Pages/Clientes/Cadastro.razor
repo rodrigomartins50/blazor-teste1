@@ -1,0 +1,25 @@
+﻿@page "/clientes/cadastro"
+
+<h1>Cadastro de Cliente</h1>
+
+<label>Nome</label>
+<input />
+
+<label>Dt. Nascimento</label>
+<input />
+
+<label>Endereço</label>
+<input />
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="Save">Salvar</button>
+
+@code {
+    int currentCount = 0;
+
+    void Save()
+    {
+        currentCount++;
+    }
+}
